@@ -1,0 +1,265 @@
+/* C:\Users\HP\Documents\AI Planet\frontend\src\App.css */
+
+/* Import React Flow styles */
+@import 'reactflow/dist/style.css';
+
+.app-title {
+  color: #442322;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  /* reduced */
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', sans-serif;
+  display: block;
+  width: 100%;
+}
+
+/* Set full-page background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1b222d;
+  /* dark slate background */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Or specifically for the main App container */
+.App {
+  min-height: 100vh;
+  background-color: #181936;
+  /* dark slate background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  /* top spacing from page */
+}
+
+
+h1 {
+  color: #1e3a8a;
+  font-weight: 700;
+  margin-bottom: 10px;
+  /* reduced */
+  font-size: 28px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+  /* reduced from 25px */
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px 10px 10px 10px;
+  /* reduced padding */
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* reduced from 25px */
+}
+
+.component-library {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* reduced from 15px */
+  padding: 10px;
+  /* reduced from 15px */
+  background-color: #2d3748;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(187, 13, 13, 0.1);
+}
+
+.library-title {
+  font-weight: 600;
+  font-size: 14px;
+  /* smaller */
+  color: #f9fbff;
+  white-space: nowrap;
+}
+
+.library-buttons {
+  display: flex;
+  gap: 6px;
+  /* reduced from 10px */
+}
+
+.library-buttons button {
+  padding: 6px 12px;
+  /* reduced */
+  border-radius: 6px;
+  border: none;
+  background-color: #1f2537;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.library-buttons button:hover {
+  background-color: #3b82f6;
+  transform: translateY(-1px);
+  /* reduced hover movement */
+}
+
+/* --- Workflow Canvas --- */
+.workflow-canvas {
+  width: 100%;
+  max-width: 600px;
+  height: 550px;
+  /* slightly reduced */
+  background-color: #2d3748;
+  border-radius: 12px;
+  /* slightly reduced */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  /* reduced from 15px */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.workflow-canvas h3 {
+  margin: 0 0 8px 0;
+  /* reduced */
+  text-align: center;
+  font-size: 18px;
+  /* smaller */
+  font-weight: 600;
+  color: #e6e9f0;
+}
+
+/* React Flow Nodes */
+.react-flow__node-default {
+  font-size: 13px;
+  /* smaller */
+  padding: 8px 12px;
+  /* reduced */
+  min-width: 120px;
+  text-align: center;
+  background-color: #dbeafe;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.react-flow__node-io {
+  font-size: 12px;
+  /* smaller */
+  padding: 6px 10px;
+  /* reduced */
+  width: 120px;
+  text-align: center;
+  background-color: #d1fae5;
+  border: 1px solid #10b981;
+  border-radius: 6px;
+}
+
+.react-flow__edge-text {
+  font-size: 12px;
+  /* smaller */
+  font-weight: 500;
+  color: #1e3a8a;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2px 4px;
+  /* reduced */
+  border-radius: 3px;
+}
+
+/* --- Chat Header Compact --- */
+.chat-interface h3 {
+  margin: 0;
+  /* remove default top/bottom margin */
+  padding: 5px 0;
+  /* small padding instead of large */
+  font-size: 16px;
+  /* adjust size */
+  font-weight: 600;
+  text-align: center;
+  color: #f3f4f6;
+}
+
+.chat-interface {
+  padding: 8px;
+  /* smaller padding instead of 15px */
+}
+
+
+/* --- Chat Interface --- */
+.chat-interface {
+  width: 800px;
+  /* slightly reduced */
+  height: 596px;
+  /* slightly reduced */
+  border: 1px solid #555;
+  padding: 15px;
+  /* reduced from 25px */
+  background-color: #2d3748;
+  border-radius: 10px;
+  /* slightly reduced */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  color: #f3f4f6;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #1e293b;
+  /* darker background for contrast */
+}
+
+.chat-message {
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background-color: #201f2f;
+  /* blue bubble */
+  color: #f1f5f9;
+  /* light text for readability */
+  font-size: 13px;
+}
+
+
+.chat-input {
+  width: 100%;
+  padding: 8px;
+  /* reduced */
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+  /* reduced */
+  font-size: 13px;
+}
+
+.chat-send-btn {
+  padding: 8px 14px;
+  /* reduced */
+  border-radius: 10px;
+  border: none;
+  background-color: #1e40af;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chat-send-btn:hover:not(:disabled) {
+  background-color: #3b82f6;
+  transform: translateY(-1px);
+  /* smaller hover movement */
+}
+
+.chat-send-btn:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
